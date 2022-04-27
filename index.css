@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 100;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(15deg, #e2d0a8, #e2d0a8, #dfbf7b, #e2b553);
+        background-size: 600% 600%;
+        animation: gradient 15s ease infinite;
+     
+        font-family: cursive;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    
+}
+
+li {
+    float: left;
+
+}
+
+li:last-child {
+    border-right: none;
+}
+
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.log{
+	width: 100px;
+
+}
+.logo{
+    text-align: center;
+}
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #333 url('//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif') no-repeat center center;
+}
+
+.closing-button {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 0 2px white;
+  padding: 20px 0;
+  width: 160px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.closing-button span {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 5;
+}
+.closing-button:before, .closing-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.closing-button:before {
+  transform: translateX(-100%);
+  background: rgb(255, 255, 255);
+  transition: transform .3s cubic-bezier(.55, .055, .675, .19);
+}
+.closing-button:after {
+  background: #e2d0a8;
+  transform: translateX(100%);
+  transition: transform .3s cubic-bezier(.16, .73, .58, .62) .3s;
+}
+.closing-button:hover:before, .closing-button:hover:after {
+  transform: translateX(0);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    
+}
+.kli {
+   text-align: right;
+    margin-right: -100px;
+}
+section.section:last-child {
+    margin-bottom: 0;
+}
+section.section h2 {
+    margin-bottom: 40px;
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+}
+section.section p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+}
+section.section p:last-child {
+    margin-bottom: 0;
+}
+section.section.content {
+    padding: 40px 0;
+}
+section.section.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: -133px;
+}
+section.section.parallax h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 48px;
+    line-height: 600px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2) ;
+}
+
+section.section.parallax_1 {
+    background-image: url(img/121106-mersedes_benc_g63_amg_6h6-dzhip-avtomobilnyj_eksterer-peyzash-mercedes_benz-1920x1080.jpg);
+}
+section.section.parallax_2 {
+    background-image: url(img/164915-nissan_gt_r-nissan-legkovyye_avtomobili-sportkar-nissan_skyline-1920x1080.jpg);
+}
+section.section.parallax_3 {
+    background-image: url(img/158118-lamborgini_aventador-lamborghini_aventador_s_2019_goda-lambordzhini_urus-lambordzhini-lambordzhini_aventador_sv-1920x1080.jpg);
+}
+@media all and (min-width: 600px) {
+    section.section h2 {
+        font-size: 42px;
+    }
+    section.section p {
+        font-size: 20px;
+    }
+    section.section.parallax h1 {
+        font-size: 160px;
+    }
+}
